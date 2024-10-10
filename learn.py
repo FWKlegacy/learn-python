@@ -30,17 +30,17 @@ def myfunc():
 
 myfunc()
 
-
+#global and local variable declaration
 
 x= "awesome"
-
-
 def func():
  x="fantastic"
  print("kenya is " +  x)
 
 func()
 print("kenya is "+  x)
+
+
 
 def myfunc():
     x="john doe"
@@ -70,4 +70,31 @@ def myfunc():
     x="form ni kutesa"
 myfunc()
 print("kenya " + x)
+
+#type of numbers,int,complex,float,string,boolen
+x=3j
+y=2
+z=3.5
+a="brevian"
+b=True
+
+#how to check data types of values assigned
+print(type(x))
+print(type(y))
+print(type(z))
+print(type(a))
+print(type(b))
+
+# if elif else statements
+wind = 100 
+status = "unset"
+if wind<8:
+    status="calm"
+elif wind>=8 and wind<=31:
+    status="breeze"
+elif wind>=32 and wind<=63:
+    status="gale"
+else:
+    status="storm"
+print(status)
 
