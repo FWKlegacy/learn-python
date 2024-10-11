@@ -98,3 +98,79 @@ else:
     status="storm"
 print(status)
 
+
+#loop lists
+#for loop
+
+thisList = ["banana","apple","oranges"]
+for x in thisList:
+    print(x)
+
+#adding an item  append()
+thisList = ["banana","apple","oranges"]
+thisList.append("guava")
+print(thisList)
+
+#insering an item to a specific index insert()
+thisList = ["banana","apple","oranges"]
+thisList.insert(2,"guava")
+print(thisList)
+
+
+thisList = ["banana","apple","oranges"]
+thisList[0:2]=["mapera","bravooo"]
+print(thisList)
+
+
+#adding list to current list use Extend()
+thisList = ["banana","apple","oranges"]
+thisList2 =  ["banana","apple","oranges"]
+thisList.extend(thisList2)
+print(thisList)
+
+
+#removing an item
+thisList = ["banana","apple","oranges"]
+thisList.remove("apple")
+print(thisList)
+
+#Remove Specified Index
+#The pop() method removes the specified index.
+thisList = ["banana","apple","oranges"]
+thisList.pop(2)
+print(thisList)
+
+#Clear the List
+#The clear() method empties the list.
+
+#The list still remains, but it has no content.
+
+thisList = ["banana","apple","oranges"]
+thisList.clear()
+print(thisList)
+
+
+thisList = ["banana","apple","oranges","tomatoes","potatoes"]
+i = 1
+while i < len(thisList):
+    print(thisList[i])
+    i+=1
+
+
+
+
+
+#PYTHON INHERITANCE
+class Person:
+  def __init__(self, fname, lname):
+    self.firstname = fname
+    self.lastname = lname
+
+  def printname(self):
+    print(self.firstname, self.lastname)
+
+class Student(Person):
+  pass
+
+x = Student("Mike", "Olsen")
+x.printname()
