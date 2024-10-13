@@ -219,6 +219,6 @@ print(txt5)
 i =1
 while i <20:
     print(i)
-    if i ==17:
-        break
-        i+=1
+    if i ==10:
+      break
+    i+=1
