@@ -1,3 +1,4 @@
+
 if 5>2:
   print("five is greater than 2")
   x= "john"
@@ -174,3 +175,50 @@ class Student(Person):
 
 x = Student("Mike", "Olsen")
 x.printname()
+
+
+#python fstring
+#allows formating selected part of a string
+#to format in fstring you add a placeholder'{}'
+
+
+#perforing operations
+
+price= 50
+txt= f"the price is { price} dollars"
+print(txt)
+
+
+price2= 50
+tax= 0.25
+txt1= f"The price is {price2 + price2*tax} dollars"
+print(txt1)
+
+
+price3= 100
+txt3= f"it is very {"expensive"if price3 >99 else "cheap"}"
+print(txt3)
+
+#Execute Functions in F-Strings
+
+fruits= "apples"
+txt4= f"i love {fruits.upper()}"
+print(txt4)
+
+
+def converter(x):
+    return x*2
+txt5 = f"the plane is flying at {converter(3000)} above sea level"
+print(txt5)
+
+
+#The while Loop
+#With the while loop we can execute a set of statements as long as a condition is true.
+
+
+i =1
+while i <20:
+    print(i)
+    if i ==17:
+        break
+        i+=1
